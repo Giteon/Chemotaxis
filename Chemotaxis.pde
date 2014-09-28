@@ -1,7 +1,7 @@
 Bacteria [] spore;
 void setup()
 {
-	size(1000, 700);
+	size(1000, 600);
 	spore = new Bacteria[200];
 
 	for (int i=0; i<spore.length; i++)
@@ -13,7 +13,7 @@ void setup()
 void draw()   
 {   
 	fill(0, 0, 0, 30);
-	rect(0, 0, 1000, 700);
+	rect(0, 0, 1000, 600);
 	for (int r=0; r<spore.length; r++) 
 
 	{
@@ -65,7 +65,7 @@ class Bacteria
 		colorMode(HSB);
 		myColor = color(random(50, 256), random(50, 255), random(50, 256));
 		mySize = (int)(Math.random()*15);  
-		myY = (int)(Math.random()*680);    
+		myY = (int)(Math.random()*580);    
 		myX = (int)(Math.random()*980);
 		myNum = (int)(mySize*55+(int)(Math.random()*9));
 	}
@@ -84,7 +84,7 @@ class Bacteria
 		}
 		else
 		{
-			text(myNum, myX-mySize/2.13, myY+mySize/5);
+			text(myNum, myX-mySize/2.1, myY+mySize/5);
 
 		}
 		popStyle();
@@ -127,7 +127,7 @@ class Bacteria
 			{
 				myX = myX - (int)(Math.random()*8-4.1);
 			}
-			if (myY>700)
+			if (myY>600)
 			{
 				myY = myY - (int)(Math.random()*8-4.1);
 			}
