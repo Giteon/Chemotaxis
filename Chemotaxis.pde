@@ -84,7 +84,7 @@ class Bacteria
 		}
 		else
 		{
-			text(myNum, myX-mySize/2.1, myY+mySize/5);
+			text(myNum, myX-mySize/2.3, myY+mySize/5);
 
 		}
 		popStyle();
